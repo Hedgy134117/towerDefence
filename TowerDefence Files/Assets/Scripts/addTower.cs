@@ -6,6 +6,7 @@ public class addTower : MonoBehaviour {
 
     public GameObject selectionCanvas;
     public bool thisTile = false;
+    public bool usable = true;
 
     private void Start()
     {
@@ -14,7 +15,7 @@ public class addTower : MonoBehaviour {
 
     private void OnMouseDown()
     {
-        if (selectionCanvas.activeInHierarchy == false)
+        if (selectionCanvas.activeInHierarchy == false && usable == true)
         {
             thisTile = true;
             selectionCanvas.SetActive(true);

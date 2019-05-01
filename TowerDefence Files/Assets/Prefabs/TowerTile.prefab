@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 212783701995582364}
   - component: {fileID: 114101690893205846}
   - component: {fileID: 61740601404348958}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: TowerTile
   m_TagString: towerTile
   m_Icon: {fileID: 0}
@@ -79,6 +79,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectionCanvas: {fileID: 0}
+  thisTile: 0
+  usable: 1
 --- !u!212 &212783701995582364
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -15,7 +15,12 @@ public class BasicEnemyAI : MonoBehaviour {
     }
 
     // Update is called once per frame
-    void Update () {
+    void Update() {
+        if (this.gameObject.GetComponent<EnemyStats>().health <= 0)
+        {
+            Destroy(this.gameObject);
+        }
+
         movementSpeed -= Time.deltaTime;
 
         if (movementSpeed < 0f)

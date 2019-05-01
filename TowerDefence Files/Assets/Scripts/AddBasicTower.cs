@@ -32,6 +32,7 @@ public class AddBasicTower : MonoBehaviour {
                 basicTower.transform.position = tile.transform.position;
                 basicTower.transform.parent = tile.transform;
                 towerSelection.SetActive(false);
+                tile.GetComponent<addTower>().usable = false;
                 tile.GetComponent<addTower>().thisTile = false;
             }
         }
