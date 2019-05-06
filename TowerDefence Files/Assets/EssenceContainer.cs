@@ -2,10 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyStats : MonoBehaviour {
+public class EssenceContainer : MonoBehaviour {
 
-    public int health;
     public int essence;
-    public int attack;
 
 }

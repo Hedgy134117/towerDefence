@@ -101,7 +101,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 2
-  attack: 0
+  essence: 1
+  attack: 1
 --- !u!114 &114742011760214378
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -117,6 +118,7 @@ MonoBehaviour:
   _movementSpeed: 1
   currentTile: 0
   tiles: []
+  essenceContainer: {fileID: 0}
 --- !u!212 &212692651545053192
 SpriteRenderer:
   m_ObjectHideFlags: 1

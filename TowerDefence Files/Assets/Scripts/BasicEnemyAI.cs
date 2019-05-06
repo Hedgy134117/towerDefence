@@ -8,16 +8,20 @@ public class BasicEnemyAI : MonoBehaviour {
     public float _movementSpeed;
     public int currentTile = 0;
     public GameObject[] tiles;
+    public EssenceContainer essenceContainer;
+    
 
     private void Start()
     {
         tiles = GameObject.Find("Grid").GetComponent<TileContainer>().enemyTiles;
+        essenceContainer = GameObject.Find("EssenceText").GetComponent<EssenceContainer>();
     }
 
     // Update is called once per frame
     void Update() {
         if (this.gameObject.GetComponent<EnemyStats>().health <= 0)
         {
+            essenceContainer.essence += this.gameObject.GetComponent<EnemyStats>().essence;
             Destroy(this.gameObject);
         }
 
